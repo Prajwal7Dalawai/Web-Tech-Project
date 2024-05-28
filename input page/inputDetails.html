@@ -9,13 +9,36 @@
 <body>
     <a href="data.html" id="back">Back</a>
     <h1 id="headenter">Enter the marks of the Student</h1><hr>
-    <form action="">
-        <p>IA 1: <input type="number" name="IA1" id="" required></p>
-        <p>IA 2: <input type="number" name="IA2" id="" required></p>
-        <p>IA 3: <input type="number" name="IA3" id="" required></p>
-        <p>CTA: <input type="number" name="CTA" id="" required></p>
-        <p>Sem-End: <input type="number" name="sem-end" id="" required></p>
+    <form action="" onsubmit="validate();">
+        <p>IA 1: <input type="number" name="IA1" id="IA1" required></p>
+        <p>IA 2: <input type="number" name="IA2" id="IA2" required></p>
+        <p>IA 3: <input type="number" name="IA3" id="IA3" required></p>
+        <p>CTA: <input type="number" name="CTA" id="CTA" required></p>
+        <p>Sem-End: <input type="number" name="sem-end" id="SEM" required></p>
         <p><input type="submit" value="submit">  <input type="reset" value="reset"></p>
     </form>
 </body>
 </html>
+<script type="text/javascript">
+
+    function validate(){
+        var num1=document.getElementById("IA1").value;
+        var num2=document.getElementById("IA2").value;
+        var num3=document.getElementById("IA3").value;
+        var num4=document.getElementById("CTA").value;
+        var num5=document.getElementById("SEM").value;
+       
+       if((num1||num2||num3 )> 20 || (num1||num2||num3 ) < 0){
+        alert("Enter internal marks which is to be between 0 and 20!!!");
+       }
+       else if((num4 > 10 )||(num4 < 0) ){
+        alert("Enter cta marks which is to be between 0 to 10");
+       }
+       else if((num5 < 0)|| (num5 >100)){
+        alert("Enter SEM END marks which is to be between 0 to 100!!!");
+       }
+       else{
+        confirm("Data inserted successfully");
+       }
+    }
+</script>
