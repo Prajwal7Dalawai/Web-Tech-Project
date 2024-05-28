@@ -1,0 +1,8 @@
+.tab{
+    visibility: hidden;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px;
+    text-align: center;
+}
