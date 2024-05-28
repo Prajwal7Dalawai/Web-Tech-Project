@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    background-color:rgb(45, 12, 45);
+}
+#head1,#head2,#listhead{
+    text-align: center;
+    color: aliceblue;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+table,th,td{
+    text-align: left;
+    border: 2px solid red;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;
+    color: aliceblue;
+}
+#back{
+    color: white;
+    text-align: left;
+}
+input{
+   border: 2px solid black;
+}
+p{
+    color: white;
+}
+#headenter{
+    color: white;
+}

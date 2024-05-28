@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inputMarks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="dataInput.xsd">
+    <marks id="studentusn">
+    <IA1>20</IA1>
+    <IA2>20</IA2>
+    <IA3>20</IA3>
+    <CTA>10</CTA>
+    <semend>100</semend>
+
+</marks>
+</inputMarks>
