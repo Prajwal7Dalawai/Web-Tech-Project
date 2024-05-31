@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(to top,rgb(47, 2, 79),rgb(136, 2, 123));
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box1{
+    height:500px;
+    width: 400px;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 80px;
+    color: white;
+    border: 2px;
+    background-color: rgba(128, 128, 128, 0.271);
+    border-radius: 10%;
+    margin-left: 150px;
+    margin-bottom: 82px;
+}
+#log{
+    font-size: 200%;
+    font-weight: 800;
+}
+#usn,#pwd{
+    margin-top: 40px;
+    width: 60%;
+    text-align: center;
+    height: 50px;
+    border-radius: 20% 20% 20% 20%;
+    background-color: rgba(77, 72, 73, 0.393);
+    color: white;
+}
+#submit{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20%;
+    color: aliceblue;
+    font-size: 20px;
+    background-color: rgb(47, 2, 79);
+}
+#submit:hover{
+    background-color: rgb(136, 2, 123);
+}

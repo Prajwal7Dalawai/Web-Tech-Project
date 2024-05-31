@@ -6,3 +6,7 @@ td,th{
     padding: 10px;
     text-align: center;
 }
+body{
+    background-color: rgb(45,12,45);
+    color: white;
+}
