@@ -5,7 +5,6 @@ body{
 background: linear-gradient(to right, rgba(11,27,138,1) 8%, rgb(1, 22, 26) 100%);
     background-repeat: no-repeat;
     background-size: contain;
-    -ms-word-wrap: normal;
 }
 .container{
    display: flex;
@@ -74,10 +73,14 @@ input:hover{
     font-weight: 600;
 }
 #sd{
-    font-size: 400%; 
+    font-size: 380%;
+    width: fit-content; 
     text-align: left;
     padding-right: 250px;
     color: rgb(231, 247, 142);
+    animation: toptodown;
+    animation-duration: 1s;
+    overflow: hidden;
 }
 .cs{
     display: inline-block;
@@ -92,21 +95,33 @@ input:hover{
     border-right: 2px solid black;
     overflow: hidden;
     text-wrap: nowrap;
-    animation: typing 3s steps(60,end),blink 0.75s infinite forwards;
+    animation: typing 1s steps(60,end),blink infinite forwards;
+    transition-duration: 1s;
 }
-.anim{
-    animation: anim 2s forwards 0.5s 1 ;
+#cs:hover{
+    color:rgb(231, 247, 142) ;
 }
 
+
 @keyframes typing {
-    from {width: 0%}
-    to {width: 100%}
+    from {
+        width: 0%}
+    to {
+        width: 100%}
 }
 @keyframes blink {
-    from,to {border-color: transparent}
-    10% {border-color: white}
+    from {border-color: transparent}
+   to {border-color: white}
 }
 @keyframes toptodown {
-    from {height: 50%}
-    to {height: 0%}
+    0% {
+        font-size: 300%;
+        width: fit-content;
+        height: fit-content;
+    }
+    100% {
+        width: fit-content;
+        height: max-content;
+        font-size: 380%;
+    }
 }
