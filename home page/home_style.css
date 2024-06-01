@@ -2,22 +2,22 @@ body{
     /*background-image: linear-gradient(to top,rgb(47, 2, 79),rgb(136, 2, 123));*/
     /* background-image:  linear-gradient(to bottom, #fffbd5, #b20a2c); */
     background: rgb(11,27,138); 
-background: linear-gradient(90deg, rgba(11,27,138,1) 8%, rgba(0,212,255,1) 100%);
+background: linear-gradient(to right, rgba(11,27,138,1) 8%, rgb(1, 22, 26) 100%);
     background-repeat: no-repeat;
     background-size: contain;
+    -ms-word-wrap: normal;
 }
 .container{
-    display: grid;
-    grid-template-columns:max-content;
+   display: flex;
+   justify-content: center;
 }
 #sdm{
-    grid-column-start:2;
+    grid-column-start:-1;
     color: aliceblue;
     align-items:end;
+    margin-left: 100px;
 }
-#login{
-    margin-right: 100px;
-}
+
 .box1{
     height:500px;
     width: 400px;
@@ -64,4 +64,49 @@ input::placeholder{
 }
 input:hover{
     background-color: rgba(241, 223, 200, 0.807);
+}
+#sdm{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: right;
+    margin-right: 100px;
+    font-weight: 600;
+}
+#sd{
+    font-size: 400%; 
+    text-align: left;
+    padding-right: 250px;
+    color: rgb(231, 247, 142);
+}
+.cs{
+    display: inline-block;
+    width: max-content;
+    height: 100px;
+    padding-right: 100px;
+}
+#cs{
+    font-size: 200%;
+    text-align: center;
+    width: max-content;
+    border-right: 2px solid black;
+    overflow: hidden;
+    text-wrap: nowrap;
+    animation: typing 3s steps(60,end),blink 0.75s infinite forwards;
+}
+.anim{
+    animation: anim 2s forwards 0.5s 1 ;
+}
+
+@keyframes typing {
+    from {width: 0%}
+    to {width: 100%}
+}
+@keyframes blink {
+    from,to {border-color: transparent}
+    10% {border-color: white}
+}
+@keyframes toptodown {
+    from {height: 50%}
+    to {height: 0%}
 }
