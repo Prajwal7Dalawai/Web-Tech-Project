@@ -1,0 +1,111 @@
+body{
+    margin: 0px;
+}
+header{
+    display: flex;
+    background-color: #f98846;
+    color: white;
+    padding:20px
+}
+.back button{
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;    
+    font-size: 120%;
+    width: 80px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.back button:hover{
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+.back a{
+    text-decoration: none;
+}
+.heading{
+    font-size: 300%;
+    text-align: center;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    height: fit-content;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    
+    display: flex;
+}
+.pie{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+#welcome{
+    margin-top: 30px;
+    margin-left: 30px;
+    color: black;
+    height: fit-content;
+}
+.data{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.sub{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    width: 280px;
+    height: 300px;
+    border: 2px solid black;
+    transition-duration: 0.5s;
+}
+.sub:hover{
+    background-color: rgb(245, 222, 180);
+}
+#btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+#view button{
+    margin: 5px;
+    height: 50px;
+    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+    width: 90px;
+    border-radius: 20px;
+}
+#view button:hover{
+    background-image: linear-gradient( 107.7deg,  rgba(235,230,44,0.55) 8.4%, rgba(252,152,15,1) 90.3% );
+}
+#edit button{
+    margin: 5px;
+    height: 50px;
+    width: 90px;
+    border-radius: 20px;
+    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+}
+#edit button:hover{
+    background-image: linear-gradient( 107.7deg,  rgba(235,230,44,0.55) 8.4%, rgba(252,152,15,1) 90.3% );
+}
+#name{
+    font-size: 200%;
+    overflow: hidden;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    text-wrap: wrap;
+    font-weight: 400;
+    color: black;
+   letter-spacing: 3px;
+}
