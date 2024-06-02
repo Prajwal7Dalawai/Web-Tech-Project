@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>Login page </title>
+    <link rel="icon" href="/assets/logo.jpeg">
     <link rel="stylesheet" href="home_style.css">
 </head>
 <body>
-    <nav class="navi"></nav>
     <div class="container">
-        <div class="container" id="login">
-            <div class="box1">
-                <p id="log">LOGIN OR SIGN UP</p>
-                <form action="">
+        <div class="login">
+            <div class="box1"> 
+                <div class="btn-box">
+                    <button class="toggle" id="l" onclick="login();">Login</button>&nbsp;&nbsp;&nbsp;
+                    <button class="toggle" id="s" onclick="signup();">Signup</button>
+                </div>
+                
+                <form action="" method="get" class="inp-grp" id="log">
                     <input type="text" name="" id="usn" placeholder="Enter USN"><br>
-                    <input type="password" name="" id="pwd" placeholder="Your DOB"><br>
-                    <input type="submit" value="Search" id="submit">
+                    <input type="password" name="" id="pwd" placeholder="Enter password"><br>
+                    <input type="submit" value="Login" id="submit">
+                </form>
+                <form action="" class="inp-field" id="sign">
+                    <input type="text" name="usn1" id="usn1" placeholder="Enter  USN"> <br>
+                    <input type="text" name="date" id="date" placeholder="Enter DOB (dd/mm/yy)"><br>
+                    <input type="submit" value="Signup" id="su">
                 </form>
             </div>
 
@@ -24,9 +33,26 @@
             <div class="anim">
                 <div id="sd">S.D.M COLLEGE<br>OF ENGINEERING <br>
                      & TECHNOLOGY</div><br>
-                <div id="cs">DEPT. OF COMPUTER SCIENCE AND  ENGINEERING</div></p>
+                <div id="cs">DEPT. OF COMPUTER SCIENCE AND  ENGINEERING</div>
             </div>
+            <div id="subj"><a href=""><H3>CLICK HERE FOR SUBJECT-WISE STUDENT ANALYSIS</H3></a></div>
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    let x = document.getElementById("log");
+    let log = document.getElementById("l");
+    let y = document.getElementById("sign");
+    let z = document.getElementById("btn");
+    function signup(){
+       x.style.left="-400px";
+       y.style.left="0px";
+        //z.style.left="110px";
+    }
+    function login(){
+       x.style.left="50px";
+       y.style.left="400px";
+       // z.style.left="0px";
+    }
+</script>
 </html>

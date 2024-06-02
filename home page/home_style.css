@@ -4,11 +4,18 @@ body{
     background: rgb(11,27,138); 
 background: linear-gradient(to right, rgba(11,27,138,1) 8%, rgb(1, 22, 26) 100%);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:cover;
+    scrollbar-color: orange;
 }
 .container{
    display: flex;
-   justify-content: center;
+   height: fit-content;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 }
 #sdm{
     grid-column-start:-1;
@@ -16,30 +23,77 @@ background: linear-gradient(to right, rgba(11,27,138,1) 8%, rgb(1, 22, 26) 100%)
     align-items:end;
     margin-left: 100px;
 }
-
 .box1{
-    height:500px;
-    width: 400px;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    padding-left: 10px;
+    overflow: hidden;
     text-align: center;
-    margin-top: 80px;
-    padding-top: 80px;
+    padding-top: 30px;
+    padding-bottom: 90px;
     color: white;
     border: 2px;
     background-color: rgba(128, 128, 128, 0.271);
     border-radius: 5%;
-    margin-left: 150px;
-    margin-bottom: 82px;
+    margin-left: 90px;
+    margin-top: 80px;
+    margin-bottom: 140px;
+}
+.btn-box{
+    width: 220px;
+    margin: 35px;
+    /* box-shadow: 0 0 20px 9px; */
+    border-radius: 30px;
+    position: relative;
+}
+
+.toggle{
+    align-items: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    width: 100px;
+    position: relative;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+#l:hover{
+    background-color: aqua;
+}
+#s:hover{
+    background-color: aqua;
+}
+#login{
+    outline: none;
+    margin-right: 900px;
+}
+
+.inp-group{
+    width: 280px;
+}
+.inp-field{
+    width: 100%;
+    outline: none;
+    background: transparent;
 }
 #log{
-    font-size: 200%;
-    font-weight: 800;
+    position: absolute;
+    left: 50px;
 }
+#sign{
+    position: relative;
+    left: 400px;
+}
+
+
 input{
-    margin-top: 40px;
-    width: 60%;
+    margin-top: 20px;
+    width: 200px;
     text-align: center;
     height: 50px;
-    border-radius: 7%;
+    border-radius: 30px;
     background-color: rgba(77, 72, 73, 0.393);
     color: black;
     transition: 1s;
@@ -48,7 +102,18 @@ input::placeholder{
     color: white;
 }
 
-#submit{
+#submit,#su{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5%;
+    color: aliceblue;
+    font-size: 20px;
+    background-color: #0b298a;
+    transition-duration: 0.8s;
+}
+
+#Signup{
     margin-top: 30px;
     width: 150px;
     height: 50px;
@@ -64,15 +129,20 @@ input::placeholder{
 input:hover{
     background-color: rgba(241, 223, 200, 0.807);
 }
+#su:hover{
+    background-color: #0012b6;
+}
 #sdm{
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: right;
     margin-right: 100px;
     font-weight: 600;
 }
 #sd{
+    margin-top: 200px;
     font-size: 380%;
     width: fit-content; 
     text-align: left;
@@ -97,6 +167,13 @@ input:hover{
     text-wrap: nowrap;
     animation: typing 1s steps(60,end),blink infinite forwards;
     transition-duration: 1s;
+}
+#subj a {
+    display: inline-block;
+    padding-bottom: 200px;
+    margin-top: 50px;
+    font-size: 120%;
+    color:white;
 }
 #cs:hover{
     color:rgb(231, 247, 142) ;
