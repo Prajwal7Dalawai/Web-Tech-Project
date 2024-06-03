@@ -164,7 +164,7 @@ input:hover{
     border-right: 2px solid black;
     overflow: hidden;
     text-wrap: nowrap;
-    animation: typing 1s steps(60,end),blink infinite forwards;
+    animation: typing 2s steps(60,end),blink infinite forwards;
     transition-duration: 1s;
 }
 #subj a {
