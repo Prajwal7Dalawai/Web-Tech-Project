@@ -70,6 +70,8 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 .sub:hover{
     background-color: rgb(245, 222, 180);
+    width: 290px;
+    height: 310px;
 }
 #btns{
     display: flex;
@@ -77,6 +79,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     justify-content: space-around;
     padding-bottom: 20px;
 }
+
 #view button{
     margin: 5px;
     height: 50px;
