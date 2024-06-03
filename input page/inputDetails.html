@@ -11,17 +11,19 @@
     <header>
         <div class="back"><a href="/second page/data.html"><button>🔙</button></a></div>
         <div class="home"><a href="/home page/home.html"><button>Home</button></a></div>
-        <div class="heading">REPORT ON </div>
+        <div class="heading">ENTER/EDIT MARKS DETAILS </div>
         <div class="menu">  </div>
     </header>
+    <div class="container">
+        <div class="form">
     <form action="">
-        <p>IA 1: <input type="number" name="IA1" id="ipfield" required></p>
-        <p>IA 2: <input type="number" name="IA2" id="ipfield" required></p>
-        <p>IA 3: <input type="number" name="IA3" id="ipfield" required></p>
-        <p>CTA: <input type="number" name="CTA" id="ipfield" required></p>
-        <p>Sem-End: <input type="number" name="sem-end" id="ipfield" required></p>
-        <p><input type="submit" value="submit">  <input type="reset" value="reset"></p>
-    </form>
+        <input type="number" name="IA1" id="ipfield" placeholder="Enter IA1 Result" required><br><br>
+         <input type="number" name="IA2" id="ipfield" placeholder="Enter IA2 Result" required><br><br>
+        <input type="number" name="IA3" id="ipfield" placeholder="Enter IA3 Result" required><br><br>
+        <input type="number" name="CTA" id="ipfield" required placeholder="Enter CTA"><br><br>
+        <input type="number" name="sem-end" id="ipfield" required placeholder="sem-end marks"> <br>
+        <input type="submit" id="submit" value="submit">  <input id="reset" type="reset" value="reset">
+    </form> </div>
     <table class="tab" border="2px">
         <tr id="head">
             <th>IA1</th>
@@ -34,63 +36,9 @@
 
         </tr>
     </table>
-</center>
+    <div class="ba"><a href="/second page/data.html"><button>Return to Dashboard</button></a></div>
+</div>
+
 </body>
+<script src="formValidation.js"></script>
 </html>
-<script type="text/javascript">
-
-    let form = document.querySelector('form');
-    form.addEventListener('submit',(frm)=>{
-        frm.preventDefault();
-        addData();
-    });
-
-
-    ipfield = document.querySelectorAll('#ipfield');
-    let ia = [ ipfield[0],ipfield[1], ipfield[2] ];
-    let cta = parseInt(ipfield[3].value);
-    let se = parseInt(ipfield[4].value);
-    
-        document.addEventListener(('click','keypress'),(event)=>{
-            ia.forEach(inp => {
-        var num1 = parseInt(inp.value);
-    if(num1>20 || num1 < 0){
-            inp.value= "";
-            alert("Marks Entry Criteria:\nFor IAs: Min - 0  Max - 20\nFor CTA: Min - 0  Max - 10\nFor Sem-End: Min - 0  Max - 100\n\nIA marks cannot me more than 20 or less than 0");
-        }
-    });
-
-    if(ipfield[3].value > 10 || ipfield[3].value < 0){
-        ipfield[3].value = "";
-        alert("Marks Entry Criteria:\nFor IAs: Min - 0  Max - 20\nFor CTA: Min - 0  Max - 10\nFor Sem-End: Min - 0  Max - 100\n\nCTA cannot be given more than 10 or less than 0");
-    }
-    if(ipfield[4].value > 100 || ipfield[4].value < 0){
-        ipfield[4].value = "";
-        alert("Marks Entry Criteria:\nFor IAs: Min - 0  Max - 20\nFor CTA: Min - 0  Max - 10\nFor Sem-End: Min - 0  Max - 100\n\nSem-End marks should be in between range of 0 - 100");
-    }
-});
-    
-
-
-    function addData(){
-        let table = document.querySelector('.tab');
-        table.style.visibility = "visible";
-        let tr = document.querySelector('#elmts');
-        let td1 = document.createElement('td');
-        tr.insertAdjacentElement('beforeend',td1);
-        td1.innerText=ipfield[0].value;
-        let td2 = document.createElement('td');
-        tr.insertAdjacentElement('beforeend',td2);
-        td2.innerText=ipfield[1].value;
-        let td3 = document.createElement('td');
-        tr.insertAdjacentElement('beforeend',td3);
-        td3.innerText=ipfield[2].value;
-        let td4 = document.createElement('td');
-        tr.insertAdjacentElement('beforeend',td4);
-        td4.innerText=ipfield[3].value;
-        let td5 = document.createElement('td');
-        tr.insertAdjacentElement('beforeend',td5);
-        td5.innerText=ipfield[4].value;
-    }
-
-</script>
